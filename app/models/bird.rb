@@ -1,2 +1,4 @@
+# app/models/bird.rb
 class Bird < ApplicationRecord
-end
+    validates :name, presence: true, uniqueness: true
+  end
